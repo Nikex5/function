@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 1.7;
+        let num2 = 30;
+
+        let result = "abc " + num + "abc2 " + num2 + " abc3";
+
+        console.log(result);
+
+        let result2 = `abc ${num} abc2 ${num2} abc3`;
+
+        console.log(result2);
+
+        function name(go) {
+            console.log('hi', go);
+        }
+        name()
+        name('fu')
+        name('da')
+
+        function summ(a, b) {
+            console.log(a - b);
+        }
+
+        summ(5, 2);
+        summ(2, 5);
+
+        function check(a, b) {
+            if (a === b) {
+                console.log("da");
+            } else {
+                console.log('net');
+            }
+        }
+        check(5, 4)
+
+        function compair(a, b, c) {
+            console.log(a > b && a > c);
+            console.log(b > a && b > c);
+            console.log(c > a && c > b);
+            if (a > b && a > c) {
+                console.log("a большее");
+            } else if (b > a && b > c) {
+                console.log("b большее");
+            } else if (c > a && c > b) {
+                console.log("c большее")
+            }
+        }
+
+        compair(7, 8, 9)
+
+        function compair2(a, b) {
+            console.log(a < b && a < b);
+            console.log(b < a && b < c);
+            if (a < b) {
+                return a
+            } else if (b < a) {
+                return b;
+            } else {
+                return "проверте данные"
+            }
+        }
+        compair(1, 2)
+        console.log(compair2(1, 2))
+
+        function kvadrat(a) {
+            console.log(a ** 2);
+        }
+
+        kvadrat(5)
+
+        function kvadrat2(a) {
+            return a ** 2
+        }
+
+        console.log(kvadrat2(10));
+
+        function name2(a) {
+            return "hello" + a
+        }
+        name2('nik')
+        console.log(name2(' serg'));
+    </script>
+</body>
+
+</html>
